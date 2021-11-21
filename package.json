@@ -1,0 +1,12 @@
+{
+  "name": "NFT-Game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://douglasdl.github.io/NFT-Game/",
+  "author": "Douglas Dias Leal",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.3",
+    "truffle": "^5.4.21"
+  }
+}
