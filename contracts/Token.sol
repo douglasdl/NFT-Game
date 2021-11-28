@@ -30,13 +30,13 @@ contract Token is ERC721, Ownable {
 	}
 
 	function feed(uint256 tokenId) public {
-		Pet storage pet = _tokenDetails[nextId];
+		Pet storage pet = _tokenDetails[tokenId];
 		require(pet.lastMeal + pet.endurance > block.timestamp);
 		pet.lastMeal = block.timestamp;
 	}
 
 	function _beforeTokenTransfer(address from, address to, uint256 tokenId) internal override {
-		Pet storage pet = _tokenDetails[nextId];
+		Pet storage pet = _tokenDetails[tokenId];
 		require(pet.lastMeal + pet.endurance > block.timestamp); // Pet still alive
 	}
 }
