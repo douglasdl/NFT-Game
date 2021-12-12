@@ -2,13 +2,13 @@ body {
     background-color: rgb(1, 2, 28);
 }
 
-#game > div > div > div > div {
-    color: yellow;
+#game > div > div > div {
+    color: black;
     
 }
 
 #pet_img {
-    width: 300px;
+    width: 100%;
 }
 
 #game {

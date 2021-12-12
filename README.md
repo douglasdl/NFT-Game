@@ -34,3 +34,10 @@ yarn truffle migrate --network development
 ```
 
 [Moralis](https://moralis.io/)
+
+
+Redeploy the contract
+```sh
+yarn truffle console
+migrate --reset
+```
